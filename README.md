@@ -103,7 +103,13 @@ python prepare_data.py
 | Baseline | `weights/baseline_normalized_softmax.pt` | 原始 | 10 | 42 |
 | 提出方法 | `weights/proposed_normalized_hinge_top1.pt` | 原始 | 10 | 42 |
 
-两份文件均从对应实验的 `last.pt` 原样导出，包含 `model`、`config`、`epoch` 和 `val_accuracy`。完整来源、大小和 SHA256 见 [权重清单](weights/manifest.json)。**权重仅在实际上传并验证成功后才提供下载链接；仅下载当前代码 ZIP 不应被理解为已获得权重。**
+两份文件均从对应实验的 `last.pt` 原样导出，包含 `model`、`config`、`epoch` 和 `val_accuracy`。完整来源、大小和 SHA256 见 [权重清单](weights/manifest.json)。权重分片保存在 [weights/](weights/) 中。下载仓库后执行下列命令，即可自动合并 ZIP、核对 SHA256 并解压得到两份 `.pt`；如果只下载了代码，脚本会从本仓库补齐分片。
+
+```bash
+python download_weights.py
+```
+
+分片仅用于绕过上传接口大小限制，恢复后的 `.pt` 与服务器原文件逐字节一致。
 
 SHA256：
 
@@ -153,13 +159,20 @@ python predict.py --checkpoint weights/proposed_normalized_hinge_top1.pt --image
 
 ## 实验记录与复现边界
 
+无需GPU即可核对代码语法、类别顺序、权重分片校验值及离线恢复流程：
+
+```bash
+python -m unittest discover -s tests -v
+```
+
 ```text
 ├── README.md
 ├── requirements.txt
 ├── prepare_data.py / train.py / evaluate.py / predict.py
 ├── project.py                 # 归档实现加载与权重模型构建
 ├── configs/                   # 固定类别、书写者划分和实验协议
-├── weights/manifest.json      # 两份主实验权重的来源与校验值
+├── download_weights.py        # 权重分片恢复、下载与校验
+├── weights/                   # 两份主实验权重分片、来源与校验值
 └── experiments/archive/
     ├── src/                   # 原始实验、消融与诊断脚本
     └── outputs/               # 实际训练指标、汇总表、协议及源码快照

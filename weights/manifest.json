@@ -13,14 +13,104 @@
       "archive_path": "weights/baseline_normalized_softmax.pt",
       "bytes": 52614852,
       "sha256": "d5191ae33b086a77f86e594ba422969be560190c52c817419bcdbd129c1f5a7d",
-      "inference": "normalized cosine head, scale30, no bias, no ground-truth margin"
+      "inference": "normalized cosine head, scale30, no bias, no ground-truth margin",
+      "download_zip": "weights/baseline_normalized_softmax.zip",
+      "zip_sha256": "3f6028046d71a2b5aa730d77cb62a3741cf1de7b9399fec35ecec41782353593",
+      "zip_bytes": 48582685,
+      "download_parts": [
+        {
+          "path": "weights/baseline_normalized_softmax.zip.part00",
+          "bytes": 6291456,
+          "sha256": "3894ec83c1b8d705b1a033f708627644127b3172063a08c0d602f327d69f5639"
+        },
+        {
+          "path": "weights/baseline_normalized_softmax.zip.part01",
+          "bytes": 6291456,
+          "sha256": "f53bc1f6966e6833157e8a7f2421222ff7f2e8ca04b06b1bc77e23b8a7f4fd0e"
+        },
+        {
+          "path": "weights/baseline_normalized_softmax.zip.part02",
+          "bytes": 6291456,
+          "sha256": "561b61d552e21b77380b64a2acf4f4030a09391868a2bef8b754596022dd7085"
+        },
+        {
+          "path": "weights/baseline_normalized_softmax.zip.part03",
+          "bytes": 6291456,
+          "sha256": "13fc39a990c5882d1607bb8635e48449ebed5c02e29fd4f2a44abc9b52752aab"
+        },
+        {
+          "path": "weights/baseline_normalized_softmax.zip.part04",
+          "bytes": 6291456,
+          "sha256": "b828e367c440ea790d6adc6775070e54e3a02cfc0aa9d7115422ba39b96496ef"
+        },
+        {
+          "path": "weights/baseline_normalized_softmax.zip.part05",
+          "bytes": 6291456,
+          "sha256": "258271ef4cf896a82de44cd0810027ac451368f3ecc44082ecfb86dd96d08071"
+        },
+        {
+          "path": "weights/baseline_normalized_softmax.zip.part06",
+          "bytes": 6291456,
+          "sha256": "caa8c3fc5f066759a5e58879511677211ebe6bdd48137a65dd1b2ab7f321d2de"
+        },
+        {
+          "path": "weights/baseline_normalized_softmax.zip.part07",
+          "bytes": 4542493,
+          "sha256": "91756fcee1895fcbfcd0d9624a0c6154390ee124b85c5f1c804ca7eca470e100"
+        }
+      ]
     },
     "proposed_normalized_hinge_top1": {
       "source": "/workspace/shouxieti/outputs/full3755_normalized_hinge_20261012_231818_134276_seed42/norm_hinge_top1/last.pt",
       "archive_path": "weights/proposed_normalized_hinge_top1.pt",
       "bytes": 52615620,
       "sha256": "78fec6a71558cc792001226e2a6d6a28786c4951f407b4a956ebe2c6b024487f",
-      "inference": "normalized cosine head, scale30, no bias, no ground-truth margin"
+      "inference": "normalized cosine head, scale30, no bias, no ground-truth margin",
+      "download_zip": "weights/proposed_normalized_hinge_top1.zip",
+      "zip_sha256": "c14b7bd6e0b8be1d92b9dc7af3af2344b2e3301ed7afb339b65f45b8e57d0481",
+      "zip_bytes": 48618687,
+      "download_parts": [
+        {
+          "path": "weights/proposed_normalized_hinge_top1.zip.part00",
+          "bytes": 6291456,
+          "sha256": "4755927ddde580d9f1666d4d4b28214d29b8f9ccd4bc118d36a6840985c8e194"
+        },
+        {
+          "path": "weights/proposed_normalized_hinge_top1.zip.part01",
+          "bytes": 6291456,
+          "sha256": "cd6bebf617463d55f5dbc54247f2ef8f6d25820dd4f67fefb5692f084ecf3594"
+        },
+        {
+          "path": "weights/proposed_normalized_hinge_top1.zip.part02",
+          "bytes": 6291456,
+          "sha256": "563a2710541db36acb3c2b2871148eb2c0bc60582971f3700563605e96a454a5"
+        },
+        {
+          "path": "weights/proposed_normalized_hinge_top1.zip.part03",
+          "bytes": 6291456,
+          "sha256": "16a13f801272b6b7e0e284484b76bc54524a78c4bb4f770f049a5b417be20db5"
+        },
+        {
+          "path": "weights/proposed_normalized_hinge_top1.zip.part04",
+          "bytes": 6291456,
+          "sha256": "24ecff5b61855c411b3f2d07a24cbc955cad5f57c3e22ddb4fe674939e8265b4"
+        },
+        {
+          "path": "weights/proposed_normalized_hinge_top1.zip.part05",
+          "bytes": 6291456,
+          "sha256": "8227dee6a762542c6dd7cdd45c9118e6eeccb5889aafc4b4170bb8667d196bc4"
+        },
+        {
+          "path": "weights/proposed_normalized_hinge_top1.zip.part06",
+          "bytes": 6291456,
+          "sha256": "b4ad33df5d9db3f9b1b65c33e72f90c640ecdcd7e1123adf7b021f899a0fb658"
+        },
+        {
+          "path": "weights/proposed_normalized_hinge_top1.zip.part07",
+          "bytes": 4578495,
+          "sha256": "9a467d10a9b14120e0f93e4242211c66db8afc18501393e1dd0f105ac90f5612"
+        }
+      ]
     }
   },
   "scope": "Main 3755-class baseline/proposed weights. Pilot/ablation weight files are not included.",
