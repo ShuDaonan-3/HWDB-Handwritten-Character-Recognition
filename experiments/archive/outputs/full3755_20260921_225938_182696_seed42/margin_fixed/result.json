@@ -1,0 +1,40 @@
+{
+  "completed": true,
+  "method": "margin_fixed",
+  "metrics": {
+    "seen": {
+      "clean": 97.83574103798823,
+      "blur_s0.5": 97.8290529695024,
+      "blur_s1.0": 97.74077046548956,
+      "blur_s1.5": 97.60165864098448,
+      "lowres_48": 97.77822364901016,
+      "lowres_32": 97.66720171214554,
+      "lowres_24": 97.39031567683253
+    },
+    "unseen": {
+      "clean": 97.83574103798823,
+      "blur_s0.75": 97.77421080791868,
+      "blur_s1.25": 97.70331728196896,
+      "lowres_40": 97.71134296415195,
+      "lowres_28": 97.6123595505618,
+      "blur_s2.0": 95.74906367041199,
+      "lowres_20": 92.87185660781167,
+      "lowres32_then_blur0.5": 97.66720171214554,
+      "lowres32_then_blur1.0": 97.52675227394329
+    }
+  },
+  "test_evaluated": false,
+  "confusion_evaluated": false,
+  "teacher_input_images": 0,
+  "student_input_images": 14963160,
+  "skipped_amp_steps": 22,
+  "second_view_counts": {
+    "clean": 0,
+    "blur_s0.5": 1246055,
+    "blur_s1.0": 1245697,
+    "blur_s1.5": 1247092,
+    "lowres_48": 1247098,
+    "lowres_32": 1246656,
+    "lowres_24": 1248982
+  }
+}

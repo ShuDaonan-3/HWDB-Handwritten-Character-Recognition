@@ -1,0 +1,263 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "CUDA_VISIBLE_DEVICES": "1",
+  "torch": "2.2.1",
+  "cuda": "11.8",
+  "failed_run": "/workspace/shouxieti/outputs/full3755_cosine_20261011_132355_191440_seed42",
+  "initial_state_sha256": "6b9f766380dd862a1eaa53dbf8e06dbe40870a0d45b5969d70e4cfb601a9e1a3",
+  "images": {
+    "shape": [
+      128,
+      1,
+      64,
+      64
+    ],
+    "finite": true,
+    "nonfinite": 0,
+    "min": -0.6941176652908325,
+    "max": 1.0
+  },
+  "second_view": {
+    "shape": [
+      128,
+      1,
+      64,
+      64
+    ],
+    "finite": true,
+    "nonfinite": 0,
+    "min": -0.6005268692970276,
+    "max": 1.0
+  },
+  "labels_min": 106,
+  "labels_max": 3732,
+  "augmentation_counts": [
+    0,
+    15,
+    21,
+    22,
+    24,
+    22,
+    24
+  ],
+  "trials": [
+    {
+      "amp": true,
+      "repeat": 1,
+      "first_nonfinite_module": {
+        "name": "layer1.0.conv1",
+        "output": {
+          "shape": [
+            256,
+            64,
+            64,
+            64
+          ],
+          "finite": false,
+          "nonfinite": 3,
+          "min": -10.9296875,
+          "max": 31.9375
+        }
+      },
+      "features": {
+        "shape": [
+          256,
+          512
+        ],
+        "finite": false,
+        "nonfinite": 131072,
+        "min": null,
+        "max": null
+      },
+      "affine_logits": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": false,
+        "nonfinite": 961280,
+        "min": null,
+        "max": null
+      },
+      "cosine_scores": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": false,
+        "nonfinite": 961280,
+        "min": null,
+        "max": null
+      },
+      "normalized_logits": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": false,
+        "nonfinite": 961280,
+        "min": null,
+        "max": null
+      },
+      "loss": null,
+      "loss_finite": false
+    },
+    {
+      "amp": true,
+      "repeat": 2,
+      "first_nonfinite_module": {
+        "name": "layer1.0.conv1",
+        "output": {
+          "shape": [
+            256,
+            64,
+            64,
+            64
+          ],
+          "finite": false,
+          "nonfinite": 17,
+          "min": -10.9296875,
+          "max": 47.78125
+        }
+      },
+      "features": {
+        "shape": [
+          256,
+          512
+        ],
+        "finite": false,
+        "nonfinite": 131072,
+        "min": null,
+        "max": null
+      },
+      "affine_logits": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": false,
+        "nonfinite": 961280,
+        "min": null,
+        "max": null
+      },
+      "cosine_scores": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": false,
+        "nonfinite": 961280,
+        "min": null,
+        "max": null
+      },
+      "normalized_logits": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": false,
+        "nonfinite": 961280,
+        "min": null,
+        "max": null
+      },
+      "loss": null,
+      "loss_finite": false
+    },
+    {
+      "amp": false,
+      "repeat": 1,
+      "first_nonfinite_module": null,
+      "features": {
+        "shape": [
+          256,
+          512
+        ],
+        "finite": true,
+        "nonfinite": 0,
+        "min": 0.009422380477190018,
+        "max": 2.9806880950927734
+      },
+      "affine_logits": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": true,
+        "nonfinite": 0,
+        "min": -2.6870365142822266,
+        "max": 2.6774888038635254
+      },
+      "cosine_scores": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": true,
+        "nonfinite": 0,
+        "min": -0.16345492005348206,
+        "max": 0.16323351860046387
+      },
+      "normalized_logits": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": true,
+        "nonfinite": 0,
+        "min": -4.903647422790527,
+        "max": 4.897005558013916
+      },
+      "loss": 9.206316947937012,
+      "loss_finite": true,
+      "nonfinite_gradient_parameters": []
+    },
+    {
+      "amp": false,
+      "repeat": 2,
+      "first_nonfinite_module": null,
+      "features": {
+        "shape": [
+          256,
+          512
+        ],
+        "finite": true,
+        "nonfinite": 0,
+        "min": 0.009422380477190018,
+        "max": 2.9806880950927734
+      },
+      "affine_logits": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": true,
+        "nonfinite": 0,
+        "min": -2.6870365142822266,
+        "max": 2.6774888038635254
+      },
+      "cosine_scores": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": true,
+        "nonfinite": 0,
+        "min": -0.16345492005348206,
+        "max": 0.16323351860046387
+      },
+      "normalized_logits": {
+        "shape": [
+          256,
+          3755
+        ],
+        "finite": true,
+        "nonfinite": 0,
+        "min": -4.903647422790527,
+        "max": 4.897005558013916
+      },
+      "loss": 9.206316947937012,
+      "loss_finite": true,
+      "nonfinite_gradient_parameters": []
+    }
+  ]
+}

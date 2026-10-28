@@ -1,0 +1,7 @@
+{
+  "canvas_size": 64,
+  "content_max_side": 56,
+  "resize": "bilinear",
+  "background": 255,
+  "polarity": "black_on_white"
+}

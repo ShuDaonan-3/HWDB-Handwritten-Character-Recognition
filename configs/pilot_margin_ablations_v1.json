@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "seed": 42,
+  "classes": 500,
+  "epochs": 10,
+  "methods": {
+    "fixed_top1_degraded": {
+      "head": "affine",
+      "selected": 1,
+      "views": "degraded",
+      "margin": 0.2
+    },
+    "fixed_top3_both": {
+      "head": "affine",
+      "selected": 3,
+      "views": "both",
+      "margin": 0.2
+    },
+    "norm_softmax": {
+      "head": "normalized",
+      "margin": 0.0
+    },
+    "cosface_m010": {
+      "head": "normalized",
+      "margin": 0.1
+    },
+    "cosface_m020": {
+      "head": "normalized",
+      "margin": 0.2
+    }
+  },
+  "normalized_scale": 30.0,
+  "normalized_training": "L2 features and classifier weights, no bias, true-class additive cosine margin only in training CE; both views; from epoch 1",
+  "normalized_inference": "30 * normalized features @ normalized classifier weights; NO true-label margin",
+  "hinge": "mean relu(0.2 - (cos_y-cos_j)); pool 10; selected hardest 1 or 3; no teacher",
+  "both_views_reduction": "mean across 2B views, NOT sum of two view means",
+  "auxiliary_weight": "epoch 1: 0; epoch 2: 0.5; epochs 3-10: 1",
+  "reuse": [
+    "aug_ce seed42",
+    "margin_fixed seed42 (top3 degraded only)"
+  ],
+  "selection": "fixed epoch 10; report ALL methods; no automatic best-method selection",
+  "interpretation": "exploratory validation only, single seed; corruption-unseen means absent in training, not an untouched evaluation set",
+  "cosface_scope": "loss adaptation to HCCR, not reproduction of the face-recognition benchmark; scale and margins are bounded pilot choices, not claimed optimal",
+  "cosface_source": "https://arxiv.org/abs/1801.09414",
+  "test_evaluated": false,
+  "confusion_evaluated": false
+}

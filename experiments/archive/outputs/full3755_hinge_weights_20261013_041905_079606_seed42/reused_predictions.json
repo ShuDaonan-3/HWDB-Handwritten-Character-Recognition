@@ -1,0 +1,58 @@
+[
+  {
+    "method": "norm_softmax",
+    "suite": "seen",
+    "bn_variant": "raw_bn",
+    "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/seen/predictions_norm_softmax.npz",
+    "sha256": "499c3357c55e84b85b3cb00d2445699a8780c52bb371474e705385a6d73322c5"
+  },
+  {
+    "method": "norm_softmax",
+    "suite": "seen",
+    "bn_variant": "calibrated_bn",
+    "path": "/workspace/shouxieti/outputs/full3755_cosine_fp32_20261011_230604_699195_seed42/norm_softmax/seen/predictions_calibrated_bn.npz",
+    "sha256": "c92491b63d07b88c0408e8e49e9e7a72b6720e2a1806272f5f5e10c3d8966d91"
+  },
+  {
+    "method": "norm_softmax",
+    "suite": "unseen",
+    "bn_variant": "raw_bn",
+    "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/unseen/predictions_norm_softmax.npz",
+    "sha256": "b732ee9b9e4fcd71b315e64831be65d8cd287bb0c071492feab61d761177f7e7"
+  },
+  {
+    "method": "norm_softmax",
+    "suite": "unseen",
+    "bn_variant": "calibrated_bn",
+    "path": "/workspace/shouxieti/outputs/full3755_cosine_fp32_20261011_230604_699195_seed42/norm_softmax/unseen/predictions_calibrated_bn.npz",
+    "sha256": "96206d3da68d2e9efdec1095c2285459f36e4e5239eb50f8c701c5da6073ffc4"
+  },
+  {
+    "method": "top1_w1",
+    "suite": "seen",
+    "bn_variant": "raw_bn",
+    "path": "/workspace/shouxieti/outputs/full3755_normalized_hinge_20261012_231818_134276_seed42/norm_hinge_top1/seen/predictions_raw_bn.npz",
+    "sha256": "605421156b29c84d1087c1fbfeec14851f11d22da8eff4e327bd7153e2cf8333"
+  },
+  {
+    "method": "top1_w1",
+    "suite": "seen",
+    "bn_variant": "calibrated_bn",
+    "path": "/workspace/shouxieti/outputs/full3755_normalized_hinge_20261012_231818_134276_seed42/norm_hinge_top1/seen/predictions_calibrated_bn.npz",
+    "sha256": "68284b6db9c1e86a9202bdb9fefb9f4e64f81398443312e72220a75f38a31f14"
+  },
+  {
+    "method": "top1_w1",
+    "suite": "unseen",
+    "bn_variant": "raw_bn",
+    "path": "/workspace/shouxieti/outputs/full3755_normalized_hinge_20261012_231818_134276_seed42/norm_hinge_top1/unseen/predictions_raw_bn.npz",
+    "sha256": "8294a89b2961b8f7654bf4c8d40ead4219b6311928f4837c9452488f58d1426d"
+  },
+  {
+    "method": "top1_w1",
+    "suite": "unseen",
+    "bn_variant": "calibrated_bn",
+    "path": "/workspace/shouxieti/outputs/full3755_normalized_hinge_20261012_231818_134276_seed42/norm_hinge_top1/unseen/predictions_calibrated_bn.npz",
+    "sha256": "771ae16c41bf68033546d68b64141b280a84e2c8a298f06ee25bb376fef04ce9"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "classes": 3755,
+  "samples": {
+    "train": 748158,
+    "val": 74760
+  },
+  "class_count_range": {
+    "train": {
+      "min": 179,
+      "max": 201
+    },
+    "val": {
+      "min": 16,
+      "max": 21
+    }
+  },
+  "calibration_rows": 8192,
+  "test_evaluated": false,
+  "confusion_evaluated": false
+}

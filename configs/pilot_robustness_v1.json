@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "split": "val",
+  "conditions": [
+    {
+      "name": "clean",
+      "type": "identity"
+    },
+    {
+      "name": "blur_s0.5",
+      "type": "gaussian",
+      "sigma": 0.5,
+      "kernel": 5
+    },
+    {
+      "name": "blur_s1.0",
+      "type": "gaussian",
+      "sigma": 1.0,
+      "kernel": 7
+    },
+    {
+      "name": "blur_s1.5",
+      "type": "gaussian",
+      "sigma": 1.5,
+      "kernel": 11
+    },
+    {
+      "name": "lowres_48",
+      "type": "lowres",
+      "size": 48
+    },
+    {
+      "name": "lowres_32",
+      "type": "lowres",
+      "size": 32
+    },
+    {
+      "name": "lowres_24",
+      "type": "lowres",
+      "size": 24
+    }
+  ],
+  "order": "GNT -> original aspect-preserving 64/56 canvas -> float normalization -> corruption",
+  "gaussian": "normalized discrete separable kernel; radius=ceil(3*sigma); reflection padding",
+  "lowres": "bilinear 64->size->64; align_corners=False; antialias=True for both steps",
+  "quantization": "none after original uint8 canvas; float32 model inference",
+  "bn": "raw and calibrated both reported; fixed 8192 clean training images, then frozen for all conditions",
+  "checkpoint": "fixed epoch 10, last.pt; no additional checkpoint selection",
+  "data_sha256": {
+    "classes.json": "6c423659bd06fdcdf10402997841a40394fa7f707d48b7fb74b5d220e6f75fab",
+    "pilot_classes.json": "bd518ccc9fbf6b01e1b5efcaa44a85284e53d79b699ec7779eaee7b79bee6451",
+    "writer_splits.json": "1b6acb0aeaa5b30ba43618fa9c3318f47d5625e4a4b14cad071f922a634434bb",
+    "preprocess.json": "58be16995095d2b3d2a4fb5a9015d1a497a8a5d0be9991c5e65dd13dca21df5b",
+    "hwdb1_1_index.csv": "ed7d740a1f29cb46de50b4734fb60a6484e2c0cea02740f32f208125a749d96d"
+  }
+}

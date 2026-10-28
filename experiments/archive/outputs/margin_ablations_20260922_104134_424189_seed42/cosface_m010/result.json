@@ -1,0 +1,46 @@
+{
+  "completed": true,
+  "method": "cosface_m010",
+  "inference_head": "normalized",
+  "inference_scale": 30,
+  "training_spec": {
+    "head": "normalized",
+    "margin": 0.1
+  },
+  "metrics": {
+    "seen": {
+      "clean": 99.26611038504072,
+      "blur_s0.5": 99.22589725545392,
+      "blur_s1.0": 99.1756308434704,
+      "blur_s1.5": 99.2359505378506,
+      "lowres_48": 99.16557756107369,
+      "lowres_32": 99.2057906906605,
+      "lowres_24": 98.99467176032974
+    },
+    "unseen": {
+      "clean": 99.26611038504072,
+      "blur_s0.75": 99.15552427867699,
+      "blur_s1.25": 99.2057906906605,
+      "lowres_40": 99.18568412586708,
+      "lowres_28": 99.18568412586708,
+      "blur_s2.0": 98.8137126771891,
+      "lowres_20": 97.35598672966724,
+      "lowres32_then_blur0.5": 99.1957374082638,
+      "lowres32_then_blur1.0": 99.1756308434704
+    }
+  },
+  "test_evaluated": false,
+  "confusion_evaluated": false,
+  "teacher_input_images": 0,
+  "student_input_images": 1991880,
+  "skipped_amp_steps": 1,
+  "second_view_counts": {
+    "clean": 0,
+    "blur_s0.5": 165733,
+    "blur_s1.0": 166182,
+    "blur_s1.5": 165765,
+    "lowres_48": 166172,
+    "lowres_32": 165835,
+    "lowres_24": 166253
+  }
+}

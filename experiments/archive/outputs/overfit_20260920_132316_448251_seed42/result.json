@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "samples": 128,
+  "steps": 75,
+  "fit_accuracy": 1.0,
+  "threshold": 0.99
+}

@@ -1,0 +1,63 @@
+{
+  "completed": true,
+  "test_evaluated": false,
+  "comparison": [
+    {
+      "condition": "clean",
+      "original_single_view_pct": 99.03488488991655,
+      "clean_pair_pct": 98.98461847793305,
+      "aug_ce_pct": 99.05499145470996,
+      "aug_minus_clean_pair_pp": 0.07037297677690901
+    },
+    {
+      "condition": "blur_s0.5",
+      "original_single_view_pct": 98.8539258067759,
+      "clean_pair_pct": 98.86397908917262,
+      "aug_ce_pct": 99.07509801950337,
+      "aug_minus_clean_pair_pp": 0.21111893033075546
+    },
+    {
+      "condition": "blur_s1.0",
+      "original_single_view_pct": 94.4405348346235,
+      "clean_pair_pct": 94.98341208404544,
+      "aug_ce_pct": 98.92429878355283,
+      "aug_minus_clean_pair_pp": 3.940886699507388
+    },
+    {
+      "condition": "blur_s1.5",
+      "original_single_view_pct": 60.21916155624811,
+      "clean_pair_pct": 65.62782748567408,
+      "aug_ce_pct": 98.7936061123957,
+      "aug_minus_clean_pair_pp": 33.16577862672162
+    },
+    {
+      "condition": "lowres_48",
+      "original_single_view_pct": 97.80838443751885,
+      "clean_pair_pct": 97.79833115512214,
+      "aug_ce_pct": 99.03488488991655,
+      "aug_minus_clean_pair_pp": 1.2365537347944127
+    },
+    {
+      "condition": "lowres_32",
+      "original_single_view_pct": 83.53272343420126,
+      "clean_pair_pct": 86.39790891726149,
+      "aug_ce_pct": 98.8036593947924,
+      "aug_minus_clean_pair_pp": 12.405750477530916
+    },
+    {
+      "condition": "lowres_24",
+      "original_single_view_pct": 55.82587714888911,
+      "clean_pair_pct": 62.672162461043534,
+      "aug_ce_pct": 98.58248718206495,
+      "aug_minus_clean_pair_pp": 35.91032472102142
+    },
+    {
+      "condition": "mean_of_6_corruptions",
+      "original_single_view_pct": 81.78010120304279,
+      "clean_pair_pct": 84.3906035320532,
+      "aug_ce_pct": 98.86900573037097,
+      "aug_minus_clean_pair_pp": 14.478402198317752
+    }
+  ],
+  "primary_contrast": "aug_ce minus clean_pair, calibrated BN, fixed epoch 10"
+}

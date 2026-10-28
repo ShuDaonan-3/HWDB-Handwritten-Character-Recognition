@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "split_and_class_selection": "unchanged original seed-42 split and 500 classes",
+  "fixed_margin": 0.2,
+  "pool": 10,
+  "selected": 3,
+  "scores": "cosine features versus classifier weights; bias excluded only in auxiliary loss",
+  "fixed_loss": "mean over top-3 corrupted hard negatives of relu(0.2 - (s_y-s_j)); mean over ALL images",
+  "fixed_gate": "none; no teacher loaded or used for fixed-margin training",
+  "teacher_margin": "unchanged saved margin_hard implementation; teacher correctness gate and clipped teacher targets",
+  "comparison_scope": "whole teacher-guided component versus teacher-free fixed margin; does not isolate gate from target value",
+  "auxiliary_weight": "epoch 1: 0; epoch 2: 0.5; epochs 3-10: 1",
+  "teacher": "same-seed clean_pair model, trained from scratch for 43/44; extra teacher training/inference recorded",
+  "primary": "mean of frozen eight unseen validation corruptions",
+  "secondary": "clean, mean of six seen corruptions, all individual conditions",
+  "selection": "fixed epoch 10; no best-epoch selection or automatic tuning",
+  "interpretation": "exploratory validation, not a test-set estimate or confirmation of novelty"
+}

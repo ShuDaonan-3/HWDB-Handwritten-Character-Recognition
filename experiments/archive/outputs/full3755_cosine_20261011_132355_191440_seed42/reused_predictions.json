@@ -1,0 +1,26 @@
+[
+  {
+    "method": "aug_ce",
+    "suite": "seen",
+    "path": "/workspace/shouxieti/outputs/full3755_20260921_225938_182696_seed42/aug_ce/predictions_calibrated_bn.npz",
+    "sha256": "f8c0b57a4631343ab6a19bde0966555a29c60b2acbea5a7c75655e07c82d0714"
+  },
+  {
+    "method": "aug_ce",
+    "suite": "unseen",
+    "path": "/workspace/shouxieti/outputs/full3755_20260921_225938_182696_seed42/aug_ce/unseen/predictions_calibrated_bn.npz",
+    "sha256": "32993ffe2c72d3fdfe743b8acf1a56ecbe290aea8ba8da79c44e0a26f2a62f3d"
+  },
+  {
+    "method": "margin_fixed",
+    "suite": "seen",
+    "path": "/workspace/shouxieti/outputs/full3755_20260921_225938_182696_seed42/margin_fixed/seen/predictions_calibrated_bn.npz",
+    "sha256": "63551e812b4eaa196d91796fe7e83e2f3f0c6579dd23fce98485e7d911b3df8a"
+  },
+  {
+    "method": "margin_fixed",
+    "suite": "unseen",
+    "path": "/workspace/shouxieti/outputs/full3755_20260921_225938_182696_seed42/margin_fixed/unseen/predictions_calibrated_bn.npz",
+    "sha256": "e8aec09ba7d62cbbc67a8384143da5b1b6de4cb60ea126220fe97273ecdcbff3"
+  }
+]

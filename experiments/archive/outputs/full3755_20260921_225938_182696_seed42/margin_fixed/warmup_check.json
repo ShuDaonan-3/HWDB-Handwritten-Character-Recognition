@@ -1,0 +1,9 @@
+{
+  "matches_aug_ce_epoch1": true,
+  "raw_accuracy": 0.8169609416800429,
+  "calibrated_accuracy": 0.9245987158908507,
+  "reference": {
+    "raw": 0.8169609416800429,
+    "calibrated": 0.9245987158908507
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "classes": 3755,
+  "seed": 42,
+  "epochs": 10,
+  "precision": "FP32",
+  "new_weights": [
+    0.25,
+    0.5
+  ],
+  "reused_arms": [
+    "norm_softmax",
+    "top1_w1"
+  ],
+  "auxiliary_schedule": "epoch1=0; epoch2=weight/2; epochs3-10=weight",
+  "hinge_margin": 0.2,
+  "selected": 1,
+  "negative_pool": 10,
+  "auxiliary_views": "degraded only",
+  "normalized_scale": 30,
+  "checkpoint": "fixed epoch10",
+  "primary_bn_variant": "raw_bn for ALL arms",
+  "calibrated_bn": "diagnostic only",
+  "interpretation": "prespecified limited weight exploration on reused validation data; not confirmatory evidence",
+  "data_sha256": {
+    "classes.json": "6c423659bd06fdcdf10402997841a40394fa7f707d48b7fb74b5d220e6f75fab",
+    "pilot_classes.json": "bd518ccc9fbf6b01e1b5efcaa44a85284e53d79b699ec7779eaee7b79bee6451",
+    "writer_splits.json": "1b6acb0aeaa5b30ba43618fa9c3318f47d5625e4a4b14cad071f922a634434bb",
+    "preprocess.json": "58be16995095d2b3d2a4fb5a9015d1a497a8a5d0be9991c5e65dd13dca21df5b",
+    "hwdb1_1_index.csv": "ed7d740a1f29cb46de50b4734fb60a6484e2c0cea02740f32f208125a749d96d"
+  },
+  "test_evaluated": false,
+  "confusion_evaluated": false
+}

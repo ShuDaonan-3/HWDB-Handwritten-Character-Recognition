@@ -1,0 +1,32 @@
+{
+  "seed": 42,
+  "gnt_files": 300,
+  "all_records": 1172907,
+  "chinese_records": 1121749,
+  "non_GB1_records": 51158,
+  "writers_per_split": {
+    "train": 200,
+    "confusion": 20,
+    "val": 20,
+    "test": 60
+  },
+  "samples_per_split": {
+    "train": 748158,
+    "confusion": 74840,
+    "val": 74760,
+    "test": 223991
+  },
+  "classes_per_split": {
+    "train": 3755,
+    "confusion": 3755,
+    "val": 3755,
+    "test": 3755
+  },
+  "pilot_classes": 500,
+  "pilot_samples_per_split": {
+    "train": 99594,
+    "confusion": 9967,
+    "val": 9947,
+    "test": 29809
+  }
+}

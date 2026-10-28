@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "candidates_run": "/workspace/shouxieti/outputs/candidates_20260921_041130_342342_seed42",
+  "source_images": 9947,
+  "validation_writers": 20,
+  "numpy_version": "1.26.3",
+  "input_sha256": {
+    "/workspace/shouxieti/outputs/controls_20260920_222924_599093_seed42/aug_ce/predictions_calibrated_bn.npz": "42dc2dcb056ac890e1f8470a919de2cebf8d95e3ef4f5e65060e5e42f6a7d512",
+    "/workspace/shouxieti/outputs/candidates_20260921_041130_342342_seed42/kd/seen/predictions_calibrated_bn.npz": "bed034c8137d0b27794b09c324ba2af03cfa2408b9cd0f54640a981b2acb9225",
+    "/workspace/shouxieti/outputs/candidates_20260921_041130_342342_seed42/margin_hard/seen/predictions_calibrated_bn.npz": "f42c4d4ff563e7f799cc004f501ccb8f451a3c886c0844e18a8891043533411d",
+    "/workspace/shouxieti/outputs/candidates_20260921_041130_342342_seed42/margin_delta/seen/predictions_calibrated_bn.npz": "163ae8ffc12dd38b5b1ded964bbca3b194194ff7c3169c01cc58f838bb9da8bd",
+    "/workspace/shouxieti/outputs/transfer_20260920_232723_680739_seed42/predictions_aug_ce.npz": "7d25d93a0808bd08926c4092fe98c87811190c852e876018fc17fb291f776ae2",
+    "/workspace/shouxieti/outputs/candidates_20260921_041130_342342_seed42/kd/unseen/predictions_calibrated_bn.npz": "1a1cda906fbaa869279b0124100b11e20853a440da5ef9881952a67f7ee49b3b",
+    "/workspace/shouxieti/outputs/candidates_20260921_041130_342342_seed42/margin_hard/unseen/predictions_calibrated_bn.npz": "3cea864bccecd1318189c66da1ed5b4205bcb57c150c3f5c6ce3a88c036207b0",
+    "/workspace/shouxieti/outputs/candidates_20260921_041130_342342_seed42/margin_delta/unseen/predictions_calibrated_bn.npz": "33b5523b484505662da71901dbbb6d6e1e2df35aba19640ee30afd4588d6e30f"
+  },
+  "sample_index_sha256": "79d092b30cedbb198711326232425dece8bbc5db4355fc049f25baaa19ef9852",
+  "source_sha256": "7d7ede3403b1b6d31c06ad2e80d3067367e10abac9bf7e5e78fb1dd3cf3585b4",
+  "reported_metrics_reproduced": true,
+  "analysis": "descriptive paired counts and leave-one-writer-out sensitivity; no exclusions",
+  "boundaries": "one training seed; reused validation; synthetic conditions share source images; no inferential tests; leave-one-out range is NOT a confidence interval",
+  "test_evaluated": false,
+  "training_performed": false
+}

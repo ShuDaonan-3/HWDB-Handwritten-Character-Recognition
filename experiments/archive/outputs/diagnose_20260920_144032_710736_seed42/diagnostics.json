@@ -1,0 +1,50 @@
+[
+  {
+    "epoch": 2,
+    "pre_tail_acc_pct": 62.46104353071278,
+    "post_tail_acc_pct": 58.650849502362526,
+    "post_tail_fp32_acc_pct": 58.86196843269328,
+    "post_tail_fp32_loss": 1.9344210345696908,
+    "post_weights_pre_tail_bn_acc_pct": 51.52307228310043,
+    "post_weights_pre_tail_bn_loss": 2.515199009300992,
+    "calibrated_bn_acc_pct": 96.50145772594753,
+    "calibrated_bn_loss": 0.1308281604439167,
+    "calibrated_bn_fp32_acc_pct": 96.51151100834421,
+    "calibrated_bn_fp32_loss": 0.1308337872673953,
+    "learned_parameters_unchanged": true,
+    "original_acc_pct": 58.650849502362526,
+    "replay_matches_reference": true
+  },
+  {
+    "epoch": 3,
+    "pre_tail_acc_pct": 87.80536845279984,
+    "post_tail_acc_pct": 73.46938775510205,
+    "post_tail_fp32_acc_pct": 73.49954760229215,
+    "post_tail_fp32_loss": 1.045876092571367,
+    "post_weights_pre_tail_bn_acc_pct": 64.42143359806977,
+    "post_weights_pre_tail_bn_loss": 1.5332190977984175,
+    "calibrated_bn_acc_pct": 96.09932643007943,
+    "calibrated_bn_loss": 0.1268280303465058,
+    "calibrated_bn_fp32_acc_pct": 96.08927314768272,
+    "calibrated_bn_fp32_loss": 0.12682602012937627,
+    "learned_parameters_unchanged": true,
+    "original_acc_pct": 73.46938775510205,
+    "replay_matches_reference": true
+  },
+  {
+    "epoch": 6,
+    "pre_tail_acc_pct": 25.12315270935961,
+    "post_tail_acc_pct": 23.363828289936663,
+    "post_tail_fp32_acc_pct": 23.303508595556448,
+    "post_tail_fp32_loss": 9.70225699443823,
+    "post_weights_pre_tail_bn_acc_pct": 18.578465869106264,
+    "post_weights_pre_tail_bn_loss": 11.076791298980268,
+    "calibrated_bn_acc_pct": 98.57243389966824,
+    "calibrated_bn_loss": 0.05369637655402304,
+    "calibrated_bn_fp32_acc_pct": 98.57243389966824,
+    "calibrated_bn_fp32_loss": 0.053695757353624606,
+    "learned_parameters_unchanged": true,
+    "original_acc_pct": 23.363828289936663,
+    "replay_matches_reference": true
+  }
+]

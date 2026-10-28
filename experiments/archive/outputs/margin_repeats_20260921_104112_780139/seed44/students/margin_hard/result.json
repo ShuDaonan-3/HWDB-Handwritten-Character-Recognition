@@ -1,0 +1,42 @@
+{
+  "completed": true,
+  "method": "margin_hard",
+  "teacher_unchanged": true,
+  "test_evaluated": false,
+  "confusion_evaluated": false,
+  "attempted_steps": 7790,
+  "skipped_amp_steps": 2,
+  "student_input_images": 1991880,
+  "teacher_input_images": 995940,
+  "second_view_counts": {
+    "clean": 0,
+    "blur_s0.5": 166184,
+    "blur_s1.0": 166573,
+    "blur_s1.5": 165155,
+    "lowres_48": 165924,
+    "lowres_32": 165704,
+    "lowres_24": 166400
+  },
+  "metrics": {
+    "seen": {
+      "clean": 99.04493817231325,
+      "blur_s0.5": 99.04493817231325,
+      "blur_s1.0": 98.95445863074293,
+      "blur_s1.5": 98.83381924198251,
+      "lowres_48": 99.00472504272645,
+      "lowres_32": 98.91424550115613,
+      "lowres_24": 98.71317985322207
+    },
+    "unseen": {
+      "clean": 99.04493817231325,
+      "blur_s0.75": 99.01477832512316,
+      "blur_s1.25": 98.93435206594954,
+      "lowres_40": 98.96451191313965,
+      "lowres_28": 98.87403237156931,
+      "blur_s2.0": 98.51211420528803,
+      "lowres_20": 95.48607620388057,
+      "lowres32_then_blur0.5": 98.89413893636272,
+      "lowres32_then_blur1.0": 98.83381924198251
+    }
+  }
+}

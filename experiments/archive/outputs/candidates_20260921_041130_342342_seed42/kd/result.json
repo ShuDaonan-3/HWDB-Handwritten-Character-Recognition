@@ -1,0 +1,42 @@
+{
+  "completed": true,
+  "method": "kd",
+  "teacher_unchanged": true,
+  "test_evaluated": false,
+  "confusion_evaluated": false,
+  "attempted_steps": 7790,
+  "skipped_amp_steps": 2,
+  "student_input_images": 1991880,
+  "teacher_input_images": 995940,
+  "second_view_counts": {
+    "clean": 0,
+    "blur_s0.5": 165733,
+    "blur_s1.0": 166182,
+    "blur_s1.5": 165765,
+    "lowres_48": 166172,
+    "lowres_32": 165835,
+    "lowres_24": 166253
+  },
+  "metrics": {
+    "seen": {
+      "clean": 99.03488488991655,
+      "blur_s0.5": 98.99467176032974,
+      "blur_s1.0": 99.02483160751986,
+      "blur_s1.5": 98.96451191313965,
+      "lowres_48": 99.01477832512316,
+      "lowres_32": 98.98461847793305,
+      "lowres_24": 98.75339298280889
+    },
+    "unseen": {
+      "clean": 99.03488488991655,
+      "blur_s0.75": 99.01477832512316,
+      "blur_s1.25": 99.03488488991655,
+      "lowres_40": 99.01477832512316,
+      "lowres_28": 98.92429878355283,
+      "blur_s2.0": 98.55232733487483,
+      "lowres_20": 95.42575650950035,
+      "lowres32_then_blur0.5": 98.99467176032974,
+      "lowres32_then_blur1.0": 98.84387252437921
+    }
+  }
+}

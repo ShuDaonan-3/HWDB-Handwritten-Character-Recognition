@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "status": "exploratory online mechanism test; no claim of confirmed novelty or effectiveness",
+  "teacher": "frozen clean_pair calibrated epoch 10; clean training input only; FP32",
+  "student": "identical random initialization and paired CE recipe as aug_ce",
+  "kd": {
+    "temperature": 2.0,
+    "direction": "KL(teacher clean || student corrupted)",
+    "gate": "teacher clean prediction equals training label",
+    "scale": "T squared"
+  },
+  "margin": {
+    "scores": "cosine between pooled feature and classifier weight; classifier bias excluded",
+    "pool": 10,
+    "selected": 3,
+    "target_cap": 0.2,
+    "teacher_target": "clip(teacher cosine y minus cosine competitor, 0, cap)",
+    "gate": "teacher prediction correct AND teacher target strictly positive",
+    "hard": "top 3 corrupted cosine competitors among the top-10 incorrect classes",
+    "delta": "top 3 positive increases in competitor-relative-to-true score within the same pool",
+    "delta_definition": "(corrupt[j]-corrupt[y]) - (clean[j]-clean[y]); detached selection",
+    "reduction": "mean over eligible pairs per sample, then mean over ALL source samples"
+  },
+  "auxiliary_weight": {
+    "epoch_1": 0.0,
+    "epoch_2": 0.5,
+    "epochs_3_to_10": 1.0
+  },
+  "selection": "fixed epoch 10; no selection by validation maxima",
+  "primary_pilot_endpoint": "mean accuracy over the frozen eight unseen conditions",
+  "secondary_endpoints": "clean and mean of the original six known corruptions; all individual conditions reported",
+  "data": "same train split as aug_ce; confusion and test splits unused",
+  "compute": "same student source batches and paired views; extra clean teacher inference is logged, not claimed free"
+}

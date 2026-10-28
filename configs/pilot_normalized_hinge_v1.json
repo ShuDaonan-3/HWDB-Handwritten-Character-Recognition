@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "classes": 500,
+  "seed": 42,
+  "epochs": 10,
+  "precision": "FP32",
+  "methods": {
+    "norm_softmax": {
+      "head": "normalized",
+      "margin": 0.0,
+      "selected": 0
+    },
+    "norm_hinge_top1": {
+      "head": "normalized",
+      "margin": 0.0,
+      "selected": 1
+    },
+    "norm_hinge_top3": {
+      "head": "normalized",
+      "margin": 0.0,
+      "selected": 3
+    }
+  },
+  "scale": 30.0,
+  "hinge_margin": 0.2,
+  "negative_pool": 10,
+  "classification": "normalized bias-free cosine CE over paired clean and degraded views, no target margin",
+  "auxiliary": "mean relu(0.2-(cos_y-cos_j)) over hardest Top1/Top3 incorrect classes on degraded views only",
+  "auxiliary_weight": "epoch1=0; epoch2=0.5; epochs3-10=1",
+  "checkpoint": "fixed epoch10; no best-epoch selection",
+  "primary_bn_variant": "raw_bn for ALL methods; calibrated_bn is diagnostic only",
+  "primary": "mean accuracy over frozen 8 training-unseen synthetic validation conditions",
+  "secondary": "clean, individual conditions, six seen-condition mean",
+  "selection": "prespecified three arms; report all outcomes, including regressions",
+  "interpretation": "exploratory single-seed pilot; new data performance and novelty not established",
+  "test_evaluated": false,
+  "confusion_evaluated": false
+}

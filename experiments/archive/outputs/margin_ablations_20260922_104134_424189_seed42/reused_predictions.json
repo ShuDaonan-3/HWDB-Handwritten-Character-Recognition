@@ -1,0 +1,26 @@
+[
+  {
+    "method": "aug_ce",
+    "suite": "seen",
+    "path": "/workspace/shouxieti/outputs/controls_20260920_222924_599093_seed42/aug_ce/predictions_calibrated_bn.npz",
+    "sha256": "42dc2dcb056ac890e1f8470a919de2cebf8d95e3ef4f5e65060e5e42f6a7d512"
+  },
+  {
+    "method": "margin_fixed",
+    "suite": "seen",
+    "path": "/workspace/shouxieti/outputs/margin_repeats_20260921_104112_780139/seed42/margin_fixed/seen/predictions_calibrated_bn.npz",
+    "sha256": "c9e5e0ee65fbe02737f2a43e6b6319fc86a6182535e1781aa2f6e2fa7732d39b"
+  },
+  {
+    "method": "aug_ce",
+    "suite": "unseen",
+    "path": "/workspace/shouxieti/outputs/transfer_20260920_232723_680739_seed42/predictions_aug_ce.npz",
+    "sha256": "7d25d93a0808bd08926c4092fe98c87811190c852e876018fc17fb291f776ae2"
+  },
+  {
+    "method": "margin_fixed",
+    "suite": "unseen",
+    "path": "/workspace/shouxieti/outputs/margin_repeats_20260921_104112_780139/seed42/margin_fixed/unseen/predictions_calibrated_bn.npz",
+    "sha256": "27970d01f36d673b90c745ae0d9b007d75931ca2ef342baee081d1caf9f5e445"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "classes": 3755,
+  "seed": 42,
+  "epochs": 10,
+  "precision": "FP32",
+  "bn_variant": "raw_bn",
+  "checkpoint_selection": "fixed epoch10; last.pt",
+  "proposed_run": "/workspace/shouxieti/outputs/full3755_normalized_hinge_20261012_231818_134276_seed42",
+  "baseline_run": "/workspace/shouxieti/outputs/full3755_cosine_fp32_20261011_230604_699195_seed42",
+  "models": {
+    "baseline_normalized_softmax": {
+      "source": "/workspace/shouxieti/outputs/full3755_cosine_fp32_20261011_230604_699195_seed42/norm_softmax/last.pt",
+      "archive_path": "weights/baseline_normalized_softmax.pt",
+      "bytes": 52614852,
+      "sha256": "d5191ae33b086a77f86e594ba422969be560190c52c817419bcdbd129c1f5a7d",
+      "inference": "normalized cosine head, scale30, no bias, no ground-truth margin"
+    },
+    "proposed_normalized_hinge_top1": {
+      "source": "/workspace/shouxieti/outputs/full3755_normalized_hinge_20261012_231818_134276_seed42/norm_hinge_top1/last.pt",
+      "archive_path": "weights/proposed_normalized_hinge_top1.pt",
+      "bytes": 52615620,
+      "sha256": "78fec6a71558cc792001226e2a6d6a28786c4951f407b4a956ebe2c6b024487f",
+      "inference": "normalized cosine head, scale30, no bias, no ground-truth margin"
+    }
+  },
+  "scope": "Main 3755-class baseline/proposed weights. Pilot/ablation weight files are not included.",
+  "data": "No original GNT, image files, paper PDFs, or dataset archives included."
+}

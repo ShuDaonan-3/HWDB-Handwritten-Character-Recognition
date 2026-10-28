@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "stage": "full-class scale check, not final test evaluation",
+  "classes": 3755,
+  "training_seed": 42,
+  "epochs": 10,
+  "batch_size": 128,
+  "training_writers": 200,
+  "validation_writers": 20,
+  "methods": [
+    "aug_ce",
+    "margin_fixed"
+  ],
+  "margin": 0.2,
+  "pool": 10,
+  "selected": 3,
+  "loss": "mean over top-3 corrupted hard negatives of relu(0.2 - (s_y-s_j)); mean over ALL images",
+  "auxiliary_weight": "epoch 1: 0; epoch 2: 0.5; epochs 3-10: 1",
+  "training": "same source batches, paired clean/second views, initialization and LR schedule for both methods",
+  "checkpoint_selection": "fixed epoch 10; no validation-max selection",
+  "initialization": "random; no pilot checkpoint or teacher",
+  "primary": "mean of the same eight training-unseen synthetic validation conditions",
+  "secondary": "clean, six seen-condition mean, all individual conditions",
+  "data_sha256": {
+    "classes.json": "6c423659bd06fdcdf10402997841a40394fa7f707d48b7fb74b5d220e6f75fab",
+    "pilot_classes.json": "bd518ccc9fbf6b01e1b5efcaa44a85284e53d79b699ec7779eaee7b79bee6451",
+    "writer_splits.json": "1b6acb0aeaa5b30ba43618fa9c3318f47d5625e4a4b14cad071f922a634434bb",
+    "preprocess.json": "58be16995095d2b3d2a4fb5a9015d1a497a8a5d0be9991c5e65dd13dca21df5b",
+    "hwdb1_1_index.csv": "ed7d740a1f29cb46de50b4734fb60a6484e2c0cea02740f32f208125a749d96d"
+  },
+  "test_evaluated": false,
+  "confusion_evaluated": false,
+  "boundary": "200-writer subset of HWDB1.1 training split; not the HWDB1.0+1.1 / ICDAR2013 benchmark protocol",
+  "convergence": "10 epochs is an initial matched budget; inspect learning curves before claiming convergence"
+}

@@ -1,0 +1,6 @@
+{
+  "aug_ce": "/workspace/shouxieti/outputs/controls_20260920_222924_599093_seed42/aug_ce",
+  "margin_hard": "/workspace/shouxieti/outputs/candidates_20260921_041130_342342_seed42/margin_hard",
+  "teacher": "/workspace/shouxieti/outputs/controls_20260920_222924_599093_seed42/clean_pair",
+  "selection": "existing calibrated epoch 10"
+}

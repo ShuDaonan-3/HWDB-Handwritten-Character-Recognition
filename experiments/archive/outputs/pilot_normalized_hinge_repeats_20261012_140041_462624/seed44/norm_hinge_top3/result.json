@@ -1,0 +1,71 @@
+{
+  "completed": true,
+  "method": "norm_hinge_top3",
+  "inference_head": "normalized",
+  "inference_scale": 30,
+  "training_spec": {
+    "head": "normalized",
+    "margin": 0.0,
+    "selected": 3
+  },
+  "metrics": {
+    "raw_bn": {
+      "seen": {
+        "clean": 99.33648336181763,
+        "blur_s0.5": 99.35658992661104,
+        "blur_s1.0": 99.28621694983411,
+        "blur_s1.5": 99.1756308434704,
+        "lowres_48": 99.33648336181763,
+        "lowres_32": 99.2057906906605,
+        "lowres_24": 98.92429878355283
+      },
+      "unseen": {
+        "clean": 99.33648336181763,
+        "blur_s0.75": 99.36664320900775,
+        "blur_s1.25": 99.2158439730572,
+        "lowres_40": 99.27616366743742,
+        "lowres_28": 99.1756308434704,
+        "blur_s2.0": 98.783552829999,
+        "lowres_20": 96.93374886900573,
+        "lowres32_then_blur0.5": 99.2057906906605,
+        "lowres32_then_blur1.0": 99.10525786669348
+      }
+    },
+    "calibrated_bn": {
+      "seen": {
+        "clean": 99.35658992661104,
+        "blur_s0.5": 99.31637679702423,
+        "blur_s1.0": 99.27616366743742,
+        "blur_s1.5": 99.14547099628028,
+        "lowres_48": 99.28621694983411,
+        "lowres_32": 99.27616366743742,
+        "lowres_24": 98.94440534834624
+      },
+      "unseen": {
+        "clean": 99.35658992661104,
+        "blur_s0.75": 99.27616366743742,
+        "blur_s1.25": 99.24600382024731,
+        "lowres_40": 99.27616366743742,
+        "lowres_28": 99.2057906906605,
+        "blur_s2.0": 98.76344626520559,
+        "lowres_20": 97.1850809289233,
+        "lowres32_then_blur0.5": 99.22589725545392,
+        "lowres32_then_blur1.0": 99.11531114909018
+      }
+    }
+  },
+  "test_evaluated": false,
+  "confusion_evaluated": false,
+  "teacher_input_images": 0,
+  "student_input_images": 1991880,
+  "skipped_amp_steps": 0,
+  "second_view_counts": {
+    "clean": 0,
+    "blur_s0.5": 166184,
+    "blur_s1.0": 166573,
+    "blur_s1.5": 165155,
+    "lowres_48": 165924,
+    "lowres_32": 165704,
+    "lowres_24": 166400
+  }
+}

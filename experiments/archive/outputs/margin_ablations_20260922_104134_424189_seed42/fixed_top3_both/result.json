@@ -1,0 +1,48 @@
+{
+  "completed": true,
+  "method": "fixed_top3_both",
+  "inference_head": "affine",
+  "inference_scale": null,
+  "training_spec": {
+    "head": "affine",
+    "selected": 3,
+    "views": "both",
+    "margin": 0.2
+  },
+  "metrics": {
+    "seen": {
+      "clean": 99.24600382024731,
+      "blur_s0.5": 99.24600382024731,
+      "blur_s1.0": 99.12536443148689,
+      "blur_s1.5": 99.05499145470996,
+      "lowres_48": 99.1756308434704,
+      "lowres_32": 99.11531114909018,
+      "lowres_24": 98.8036593947924
+    },
+    "unseen": {
+      "clean": 99.24600382024731,
+      "blur_s0.75": 99.16557756107369,
+      "blur_s1.25": 99.07509801950337,
+      "lowres_40": 99.18568412586708,
+      "lowres_28": 99.04493817231325,
+      "blur_s2.0": 98.60259374685835,
+      "lowres_20": 95.75751482859154,
+      "lowres32_then_blur0.5": 99.09520458429677,
+      "lowres32_then_blur1.0": 99.03488488991655
+    }
+  },
+  "test_evaluated": false,
+  "confusion_evaluated": false,
+  "teacher_input_images": 0,
+  "student_input_images": 1991880,
+  "skipped_amp_steps": 1,
+  "second_view_counts": {
+    "clean": 0,
+    "blur_s0.5": 165733,
+    "blur_s1.0": 166182,
+    "blur_s1.5": 165765,
+    "lowres_48": 166172,
+    "lowres_32": 165835,
+    "lowres_24": 166253
+  }
+}

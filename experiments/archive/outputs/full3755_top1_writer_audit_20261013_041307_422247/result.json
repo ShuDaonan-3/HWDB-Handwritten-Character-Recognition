@@ -1,0 +1,38 @@
+{
+  "completed": true,
+  "source_run": "/workspace/shouxieti/outputs/full3755_normalized_hinge_20261012_231818_134276_seed42",
+  "source_sha256": "92a67f8343268182436dd00afbab44028b6ae9c3daa26fb440453599fe1f116d",
+  "val_index_sha256": "e2d147c42d3ae773dfc14c7b91302ef49305b6a5b9a10cbd99ee836eb9b735c6",
+  "prediction_provenance": [
+    {
+      "method": "norm_softmax",
+      "suite": "seen",
+      "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/seen/predictions_norm_softmax.npz",
+      "sha256": "499c3357c55e84b85b3cb00d2445699a8780c52bb371474e705385a6d73322c5"
+    },
+    {
+      "method": "norm_hinge_top1",
+      "suite": "seen",
+      "path": "/workspace/shouxieti/outputs/full3755_normalized_hinge_20261012_231818_134276_seed42/norm_hinge_top1/seen/predictions_raw_bn.npz",
+      "sha256": "605421156b29c84d1087c1fbfeec14851f11d22da8eff4e327bd7153e2cf8333"
+    },
+    {
+      "method": "norm_softmax",
+      "suite": "unseen",
+      "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/unseen/predictions_norm_softmax.npz",
+      "sha256": "b732ee9b9e4fcd71b315e64831be65d8cd287bb0c071492feab61d761177f7e7"
+    },
+    {
+      "method": "norm_hinge_top1",
+      "suite": "unseen",
+      "path": "/workspace/shouxieti/outputs/full3755_normalized_hinge_20261012_231818_134276_seed42/norm_hinge_top1/unseen/predictions_raw_bn.npz",
+      "sha256": "8294a89b2961b8f7654bf4c8d40ead4219b6311928f4837c9452488f58d1426d"
+    }
+  ],
+  "seed": 42,
+  "bn_variant": "raw_bn",
+  "interpretation": "Descriptive single-seed validation audit. Repeated image conditions are NOT independent images. Leave-one-writer-out ranges are sensitivity summaries, NOT confidence intervals. No significance, novelty, or independent test-performance claim.",
+  "training_steps": 0,
+  "test_evaluated": false,
+  "confusion_evaluated": false
+}

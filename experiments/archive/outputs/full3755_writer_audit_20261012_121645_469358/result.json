@@ -1,0 +1,62 @@
+{
+  "completed": true,
+  "source_audit": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646",
+  "source_sha256": "ba55590d4a5b76bf5689c61962bbd826cb09cfbb17e4851b8482740b3fa71837",
+  "val_index_sha256": "e2d147c42d3ae773dfc14c7b91302ef49305b6a5b9a10cbd99ee836eb9b735c6",
+  "prediction_provenance": [
+    {
+      "method": "aug_ce",
+      "suite": "seen",
+      "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/seen/predictions_aug_ce.npz",
+      "sha256": "d4e22f96d87a08970369e3a19f667d367bb18ee86089547c80022ed0f5b431fd"
+    },
+    {
+      "method": "margin_fixed",
+      "suite": "seen",
+      "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/seen/predictions_margin_fixed.npz",
+      "sha256": "c2179dd713e72f56a91c3266dfdb6e1403b2816e35cb9dff55090d302a280f30"
+    },
+    {
+      "method": "norm_softmax",
+      "suite": "seen",
+      "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/seen/predictions_norm_softmax.npz",
+      "sha256": "499c3357c55e84b85b3cb00d2445699a8780c52bb371474e705385a6d73322c5"
+    },
+    {
+      "method": "cosface_m010",
+      "suite": "seen",
+      "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/seen/predictions_cosface_m010.npz",
+      "sha256": "df4b7b3c74ca9709d421e5223adfc2fc31d88c6b9d41d2a0d96aa32b63691f52"
+    },
+    {
+      "method": "aug_ce",
+      "suite": "unseen",
+      "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/unseen/predictions_aug_ce.npz",
+      "sha256": "d6691c9b1bd675580289d3db57296efc1b84ce583ee060bc1a3055c8130f3735"
+    },
+    {
+      "method": "margin_fixed",
+      "suite": "unseen",
+      "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/unseen/predictions_margin_fixed.npz",
+      "sha256": "fb8422bbfc26e2e30edbda782850b9d68b8af4ed024433af19bb5cb8385507b9"
+    },
+    {
+      "method": "norm_softmax",
+      "suite": "unseen",
+      "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/unseen/predictions_norm_softmax.npz",
+      "sha256": "b732ee9b9e4fcd71b315e64831be65d8cd287bb0c071492feab61d761177f7e7"
+    },
+    {
+      "method": "cosface_m010",
+      "suite": "unseen",
+      "path": "/workspace/shouxieti/outputs/full3755_bn_audit_20261012_115329_593646/unseen/predictions_cosface_m010.npz",
+      "sha256": "93b49cbbec7472119a33f2b6ed5e7700add88732986e6a67bfeb2795fb91be15"
+    }
+  ],
+  "seed": 42,
+  "bn_variant": "raw_bn",
+  "interpretation": "Descriptive single-seed validation audit. Repeated conditions are not independent images. Leave-one-writer-out ranges are sensitivity summaries, NOT confidence intervals. No claim of significance, novelty, or performance on new data.",
+  "training_steps": 0,
+  "test_evaluated": false,
+  "confusion_evaluated": false
+}

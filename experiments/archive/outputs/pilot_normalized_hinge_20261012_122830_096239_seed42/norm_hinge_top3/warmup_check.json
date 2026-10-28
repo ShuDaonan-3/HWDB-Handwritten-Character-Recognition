@@ -1,0 +1,9 @@
+{
+  "matches_norm_softmax_epoch1": true,
+  "raw_accuracy": 0.9196742736503468,
+  "calibrated_accuracy": 0.9514426460239268,
+  "reference": {
+    "raw": 0.9196742736503468,
+    "calibrated": 0.9514426460239268
+  }
+}

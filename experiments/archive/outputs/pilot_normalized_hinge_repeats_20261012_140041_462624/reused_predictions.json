@@ -1,0 +1,86 @@
+[
+  {
+    "method": "norm_softmax",
+    "suite": "seen",
+    "bn_variant": "raw_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_softmax/seen/predictions_raw_bn.npz",
+    "sha256": "6b19d8c88c2e3f9cf2a24ed3c98137326b5b59fcabceca591bc7285a1b4d30aa"
+  },
+  {
+    "method": "norm_softmax",
+    "suite": "seen",
+    "bn_variant": "calibrated_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_softmax/seen/predictions_calibrated_bn.npz",
+    "sha256": "20907e136a322cb28c08258909a9e7044cd4acc2b0590fd96fc0c1c29781f68e"
+  },
+  {
+    "method": "norm_softmax",
+    "suite": "unseen",
+    "bn_variant": "raw_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_softmax/unseen/predictions_raw_bn.npz",
+    "sha256": "f7d0a1abebd76e60d3066f5cea4e0febeb72da6d76fd919e8c5539a33b7f2ac2"
+  },
+  {
+    "method": "norm_softmax",
+    "suite": "unseen",
+    "bn_variant": "calibrated_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_softmax/unseen/predictions_calibrated_bn.npz",
+    "sha256": "12b243869a2b665fd9863fb28e2797c5b3b2361048f0e45e191702d6fd64b05e"
+  },
+  {
+    "method": "norm_hinge_top1",
+    "suite": "seen",
+    "bn_variant": "raw_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_hinge_top1/seen/predictions_raw_bn.npz",
+    "sha256": "9e830b5e1e42ea16b3e72601b0621c29f37212b10a519adb10f14d4c46811a19"
+  },
+  {
+    "method": "norm_hinge_top1",
+    "suite": "seen",
+    "bn_variant": "calibrated_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_hinge_top1/seen/predictions_calibrated_bn.npz",
+    "sha256": "0ab738691ec9f0235e560ee98a727372764d2f6f2a3f4111fb58b67d5df27258"
+  },
+  {
+    "method": "norm_hinge_top1",
+    "suite": "unseen",
+    "bn_variant": "raw_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_hinge_top1/unseen/predictions_raw_bn.npz",
+    "sha256": "84e666e89f09ea7d9defe1248e1d988f0d87e2be7b54a9e6e015fcfc177dbb18"
+  },
+  {
+    "method": "norm_hinge_top1",
+    "suite": "unseen",
+    "bn_variant": "calibrated_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_hinge_top1/unseen/predictions_calibrated_bn.npz",
+    "sha256": "62c060c4031ff859a5706ab88b2abc6ce885612ccecadcad2b0ecb7cea7dd681"
+  },
+  {
+    "method": "norm_hinge_top3",
+    "suite": "seen",
+    "bn_variant": "raw_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_hinge_top3/seen/predictions_raw_bn.npz",
+    "sha256": "24e24ce260179de70f0c0c0db922cb36a73339ee7ab60c53a9d2c88c807953ff"
+  },
+  {
+    "method": "norm_hinge_top3",
+    "suite": "seen",
+    "bn_variant": "calibrated_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_hinge_top3/seen/predictions_calibrated_bn.npz",
+    "sha256": "68decd051603c7c5bd2a05b221cb8e1cb994ff29518216237acbaa847f78245e"
+  },
+  {
+    "method": "norm_hinge_top3",
+    "suite": "unseen",
+    "bn_variant": "raw_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_hinge_top3/unseen/predictions_raw_bn.npz",
+    "sha256": "4d05c3045a83c9cbe1c055494c204b29b4f7cdd9065ca707fa188ce82fb1c139"
+  },
+  {
+    "method": "norm_hinge_top3",
+    "suite": "unseen",
+    "bn_variant": "calibrated_bn",
+    "path": "/workspace/shouxieti/outputs/pilot_normalized_hinge_20261012_122830_096239_seed42/norm_hinge_top3/unseen/predictions_calibrated_bn.npz",
+    "sha256": "2d765690985ee814ae4d04eaa6aa1f69a231adf960e172e7c62661fe73774192"
+  }
+]
